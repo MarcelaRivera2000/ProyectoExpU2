@@ -10,6 +10,7 @@ const TodoList =({todo})=>{
                    titulo={todo.titulo}
                    descripcion={todo.descripcion}
                    etiquetas={todo.etiquetas}
+                   user={todo.user}
                     /> 
                 ))}
             </ul>     

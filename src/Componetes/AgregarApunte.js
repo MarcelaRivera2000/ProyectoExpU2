@@ -2,13 +2,16 @@ import React,{useState} from 'react';
 import {Modal} from 'reactstrap';
 
 const Form =({setInputText,setTodos,todo})=>{
+    const[abrir,setAbrir]= useState(false);
+    const inputTitulo=(titulo)=>{apunte.titulo=titulo.target.value;};
+    const inputDescripcion=(Descrip)=>{apunte.descripcion=Descrip.target.value;};
+    const inputEtiquetas=(eti)=>{apunte.etiquetas=eti.target.value;};
+
     let apunte={
         titulo:"",
         descripcion:"",
-        etiquetas:"",
+        etiquetas:""
     }
-
-    const[abrir,setAbrir]= useState(false);
 
     const submitTodoHandler=(e)=>{
         setInputText(apunte);
@@ -24,23 +27,13 @@ const Form =({setInputText,setTodos,todo})=>{
         ]);
         setInputText("");
     };
-
-    const inputTitulo=(titulo)=>{
-        apunte.titulo=titulo.target.value;
-    };
-    const inputDescripcion=(Descrip)=>{
-        apunte.descripcion=Descrip.target.value;
-
-    };
-    const inputEtiquetas=(eti)=>{
-        apunte.etiquetas=eti.target.value;
-    };
     
     return (
         <div>
         <button id="btnAgregar" onClick={()=>setAbrir(!abrir)}>Agregar Apunte</button>
             <Modal isOpen={abrir} className="overlay" id="overlay">
                 <div  className="popup" id="popup">               
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                 <a href="#" class="btn-cerrar-popup" id="btn-cerrar-popup" onClick={()=>setAbrir(!abrir)}>x</a>
                 <h3 className ="wrapper">NUEVA APUNTE</h3>
                 <form action="" className="wrapper">

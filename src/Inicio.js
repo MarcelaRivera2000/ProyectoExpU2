@@ -4,12 +4,13 @@ import './assets/css/PIncio.css'
 import Login from './Componetes/Login';
 
 const Inicio=({setUser,setIngreso,ListaUsuarios})=>{
+    const[abrir,setAbrir]= useState(false);
+    const inputEmail=(titulo)=>{userr.email=titulo.target.value;};
+    const inputPass=(Descrip)=>{userr.pass=Descrip.target.value;};
     const userr={
         email:"",
         pass:"",
     }
-
-    const[abrir,setAbrir]= useState(true);
 
     const submitTodoHandler=(e)=>{
         e.preventDefault();
@@ -18,12 +19,7 @@ const Inicio=({setUser,setIngreso,ListaUsuarios})=>{
         setIngreso(true);
     };
 
-    const inputEmail=(titulo)=>{
-        userr.email=titulo.target.value;
-    };
-    const inputPass=(Descrip)=>{
-        userr.pass=Descrip.target.value;
-    };
+    
 
     const Validacion =()=>{
         var aux=false;

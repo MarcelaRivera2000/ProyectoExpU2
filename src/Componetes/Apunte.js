@@ -1,13 +1,15 @@
 import React,{useState}  from 'react';
 import Etiquetas from './Etiqueta.js';
-import Like from 'C:/Users/HP/Desktop/ProyectoUx2/src/assets/imagenes/like.png';
-import dislike from 'C:/Users/HP/Desktop/ProyectoUx2/src/assets/imagenes/dislike.png';
-import Compartir from 'C:/Users/HP/Desktop/ProyectoUx2/src/assets/imagenes/share.png';
+import Like from '../assets/imagenes/like.png';
+import dislike from '../assets/imagenes/dislike.png';
+import Compartir from '../assets/imagenes/share.png';
 
 const Apunte =({titulo,descripcion,etiquetas})=>{
         const[cont,setcont]= useState(0);
         const[dislik,setdislike]= useState(0);
         const[comp,setdomp]= useState(0);
+        var aux=etiquetas.split("#");
+
         return (
             <div id="Contenido-Contener">
                 <button id="btnFecha">Eliminar</button>
@@ -15,7 +17,10 @@ const Apunte =({titulo,descripcion,etiquetas})=>{
                     <h4 id="Titulo">{titulo}</h4>
                     <p id="Descripcion">{descripcion}</p>
                     <div id="Etiquetas">
-                        <Etiquetas etiquetas={etiquetas}/>
+                    {aux.map(aux=>(
+                        <Etiquetas 
+                            etiquetas={aux}
+                        />))}  
                     </div>
                     <div id="Tarea-Interacciones">
                         <p id="btnLikes" className="btnInterracion" onClick={()=>setcont(cont+1)}>
