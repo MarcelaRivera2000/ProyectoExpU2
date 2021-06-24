@@ -9,6 +9,8 @@ const Apunte =({titulo,descripcion,etiquetas,like,dislike,share})=>{
         const[dislik,setdislike]= useState(dislike);
         const[sharee,setShare]= useState(share);
         var aux=etiquetas.split("#");
+        delete aux[0];
+        console.log(aux);
         let newDate=new Date();
         return (
             <div id="Contenido-Contener">
