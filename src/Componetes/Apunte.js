@@ -12,6 +12,7 @@ const Apunte =({titulo,descripcion,etiquetas,like,dislike,share})=>{
         delete aux[0];
         console.log(aux);
         let newDate=new Date();
+        
         return (
             <div id="Contenido-Contener">
                 <button id="btnFecha">{newDate.getDate()}/{newDate.getMonth()}/{newDate.getFullYear()}</button>
