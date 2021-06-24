@@ -27,7 +27,7 @@ header{
   line-height:100px;
   float:left;
   font-size: 50px;
-  color: black;
+  color: white;
 }
 
 header nav{
@@ -201,11 +201,13 @@ p #Vtitulo,#Vetiquetas{
   color: #c2c0c0;
   border: 1px solid #dbdbdb;
   border-radius: 10px;
+  padding-left:2%;
+  padding-right:2%;
 }
 
 #Etiquetas b:hover{
-  color: #e4cfae;
-  border: 2px solid #e4cfae;
+  color: #ff9d36;
+  border: 2px solid #ff9d36;
 }
 
 #Tarea-Interacciones{
