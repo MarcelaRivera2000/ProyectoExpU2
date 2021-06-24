@@ -91,7 +91,7 @@ header nav a:hover{
 }
 
 .popup .btn-cerrar-popup:hover{
-  color: #f3a897;
+  color: #00d382;
 }
 
 p #Vtitulo,#Vtext-area,#Vetiquetas{
@@ -124,12 +124,12 @@ p #Vtitulo,#Vetiquetas{
 }
 
 .popup #btnGuardar:hover{
-  color: #f3a897;
-  border: 1px solid #dd8b78;
+  color: #00d382;
+  border: 1px solid #00d382;
 }
 
 .popup h3{
-  color: #f3a897;
+  color: #00d382;
 }
 
 .Koana{
@@ -148,8 +148,8 @@ p #Vtitulo,#Vetiquetas{
 }
 
 .Koana #btnAgregar:hover{
-  color: #f3a897;
-  border: 1px solid #dd8b78;
+  color: #00d382;
+  border: 1px solid #00975d;
   
 }
 
@@ -171,13 +171,13 @@ p #Vtitulo,#Vetiquetas{
 }
 
 #Contenido-Contener #btnFecha:hover{
-  background-color: #dd8b78;
+  background-color: #00d6ee;
   color: #fff;
   font-size: 15px;
 }
 
 #Contenido-Tarea h4{
-  color:#94996a;
+  color:#00d6ee;
   font-size: 23px;
   margin-left: 2%;
   margin-bottom: 10px;
