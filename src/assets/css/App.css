@@ -16,8 +16,7 @@ body{
 }
 
 header{
-  background-image: radial-gradient(circle at 119.64% 62.28%, #f3c5d6 0, #f6c5d2 6.25%, #f7c5cd 12.5%, #f8c5c8 18.75%, #f8c5c4 25%, #f7c6c0 31.25%, #f6c7bc 37.5%, #f4c8b8 43.75%, #f2c9b5 50%, #efcab2 56.25%, #ecccb0 62.5%, #e8cdaf 68.75%, #e4cfae 75%, #dfd0ad 81.25%, #dbd2ae 87.5%, #d6d3ae 93.75%, #d1d5b0 100%);
-  opacity: 80%;
+  background-image: radial-gradient(circle at -1.74% 50%, #ff9d36 0, #f8a42a 5.56%, #eaab20 11.11%, #dbb119 16.67%, #ccb717 22.22%, #bbbd1d 27.78%, #a9c127 33.33%, #96c533 38.89%, #82c941 44.44%, #6acc50 50%, #4ccf60 55.56%, #14d170 61.11%, #00d382 66.67%, #00d494 72.22%, #00d5a6 77.78%, #00d6b8 83.33%, #00d6cb 88.89%, #00d6dc 94.44%, #00d6ee 100%);  opacity: 80%;
   color: #fff;  
   width: 100%;
   overflow: hidden;
@@ -52,7 +51,7 @@ header nav a {
 }
 
 header nav a:hover{
-  background: #f3a897;
+  background: #a9c127;
   color: #fff;
   border-radius: 50px;
   text-decoration: none;
