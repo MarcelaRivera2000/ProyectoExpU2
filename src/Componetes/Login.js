@@ -17,7 +17,7 @@ export default class Login extends Component{
     render(){
         return (
             // eslint-disable-next-line jsx-a11y/anchor-is-valid
-            <button id="SingInGoogle" className="btn" onClick={this.login}>Sing In</button>
+            <a href="#"  type="button"  onClick={this.login}>Sing in with Google</a>
         );
     }
 }

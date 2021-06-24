@@ -1,21 +1,16 @@
 import React from 'react'
+import Login from './Login'
 
-class MenuVarIn extends React.Component{
-    render(){
+function MenuVarIn(){
         return (
             <div class ="wrapper">
                 <p id="NameEmpresa">Menexx</p>
                 <nav>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-                    <a href="#"  type="button">Search</a>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-                    <a href="#"  type="button">Friends</a>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-                    <a href="#"  type="button">Log Out</a>
+                    <Login/>
                 </nav>
             </div>
         );
-    }
+    
 }
 
 export default MenuVarIn

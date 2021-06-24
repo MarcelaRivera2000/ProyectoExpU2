@@ -10,7 +10,10 @@ const Form =({setInputText,setTodos,todo})=>{
     let apunte={
         titulo:"",
         descripcion:"",
-        etiquetas:""
+        etiquetas:"",
+        like:0,
+        dislike:0,
+        share:0
     }
 
     const submitTodoHandler=(e)=>{
@@ -21,8 +24,9 @@ const Form =({setInputText,setTodos,todo})=>{
             {titulo: apunte.titulo,
             descripcion: apunte.descripcion,
             etiquetas:apunte.etiquetas,
-            completed: false,
-            favorite:false
+            like:apunte.like,
+            dislike:apunte.dislike,
+            share:apunte.share
         }
         ]);
         setInputText("");
