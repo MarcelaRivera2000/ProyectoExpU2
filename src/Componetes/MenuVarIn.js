@@ -3,7 +3,7 @@ import Login from './Login'
 
 function MenuVarIn(){
         return (
-            <div class ="wrapper">
+            <div className ="wrapper">
                 <p id="NameEmpresa">Menexx</p>
                 <nav>
                     <Login/>

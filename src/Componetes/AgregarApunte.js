@@ -1,13 +1,13 @@
 import React,{useState} from 'react';
 import {Modal} from 'reactstrap';
+var friendList=[];
 
-const Form =({setInputText,setTodos,todo})=>{
+const AgregarApunte =({setInputText,setTodos,todo})=>{
     const[abrir,setAbrir]= useState(false);
     const inputTitulo=(titulo)=>{apunte.titulo=titulo.target.value;};
     const inputDescripcion=(Descrip)=>{apunte.descripcion=Descrip.target.value;};
     const inputEtiquetas=(eti)=>{apunte.etiquetas=eti.target.value;};
-
-    let apunte={
+    var apunte={
         titulo:"",
         descripcion:"",
         etiquetas:"",
@@ -15,8 +15,10 @@ const Form =({setInputText,setTodos,todo})=>{
         dislike:0,
         share:0
     }
-
+    
     const submitTodoHandler=(e)=>{
+        var storedList=localStorage.getItem('listaApuntes');
+        friendList=JSON.parse(storedList);
         setInputText(apunte);
         e.preventDefault();
         setTodos([
@@ -26,12 +28,16 @@ const Form =({setInputText,setTodos,todo})=>{
             etiquetas:apunte.etiquetas,
             like:apunte.like,
             dislike:apunte.dislike,
-            share:apunte.share
-        }
-        ]);
+            share:apunte.share}]);
         setInputText("");
+        friendList.push(apunte);
+        localstorage(friendList);
     };
-    
+
+    function localstorage(ListaApuntes){
+        localStorage.setItem('listaApuntes',JSON.stringify(ListaApuntes));
+    }
+
     return (
         <div>
         <button id="btnAgregar" onClick={()=>setAbrir(!abrir)}>Agregar Apunte</button>
@@ -56,4 +62,4 @@ const Form =({setInputText,setTodos,todo})=>{
         );  
     }
 
-export default Form;
+export default AgregarApunte;

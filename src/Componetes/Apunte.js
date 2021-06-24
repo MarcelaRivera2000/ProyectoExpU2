@@ -10,7 +10,6 @@ const Apunte =({titulo,descripcion,etiquetas,like,dislike,share})=>{
         const[sharee,setShare]= useState(share);
         var aux=etiquetas.split("#");
         let newDate=new Date();
-
         return (
             <div id="Contenido-Contener">
                 <button id="btnFecha">{newDate.getDate()}/{newDate.getMonth()}/{newDate.getFullYear()}</button>
@@ -35,7 +34,6 @@ const Apunte =({titulo,descripcion,etiquetas,like,dislike,share})=>{
                         </p>
                     </div>
                 </div>
-
             </div>
         );
 }

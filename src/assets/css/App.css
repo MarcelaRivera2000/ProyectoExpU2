@@ -238,3 +238,14 @@ p #Vtitulo,#Vetiquetas{
   width: 400px;
   height: 35px;
 }
+
+#btnn{
+  margin-top: 25px;
+  height: 35px;
+  width: 99%;
+  max-width: 1000px;
+  padding: 0;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  font-size: 20px;
+}
