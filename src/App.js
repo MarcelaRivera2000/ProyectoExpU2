@@ -9,7 +9,7 @@ function App(){
   const [inputText,setInputText] = useState ("");
   const [Apunte,setApunte]=useState ([]);
   var storedList=localStorage.getItem('listaApuntes');
-  
+  console.log("dsa")
   useEffect(()=>{
     if(storedList == null){
       ApuntesList=[];
